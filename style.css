@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+div{
+    border-radius: 10px;
+
+}
+.centered {
+    position: fixed;
+    left: 35%;
+    top: 30px;
+    height: auto;
+    width: 500px;
+    background-color: rgb(226, 202, 187);
+    position : relative;
+}
+
+img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#align {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    padding: 20px 50px 40px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+#visit {
+    background-color: rgb(201, 111, 111);
+    color: #fff;
+    font-size: 2rem;
+    width: auto;
+    border-radius: 15px;
+    padding: 4px;
+    position: absolute;
+    bottom: -18px;
+    left : 35%;
+    right: 35%;
+}
