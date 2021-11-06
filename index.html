@@ -10,12 +10,13 @@
     <title>ToDoList</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/checkmark.css" />
     <script src="https://kit.fontawesome.com/b862bb0d81.js" crossorigin="anonymous"></script>
-
 
 </head>
 
 <body>
+    <script rel="text/javascript" src="js/script.js"></script>
 
     <header>
         <img src="assets/images/day.jpeg" />
@@ -24,28 +25,54 @@
     <section class="list-container">
         <div class="container">
             <h2>
-                Todo List <input type="checkbox" id="switch" /><label class="switch-label" for="switch">Toggle</label
-          >
-        </h2>
-        <div class="list">
-          <div class="list-item">
-            <input placeholder="Add a task to the List..." type="text" />
-            <i class="fas fa-plus"></i>
-          </div>
-          <ol class="todo-list">
-            <div class="taskbar list-item">
-              <div>5 Items left</div>
-              <div style="display: flex">
-                <div class="active" id="all">All</div>
-                <div id="pending">Pending</div>
-                <div id="complete">Completed</div>
-              </div>
-              <div class="clear">Clear</div>
+                Todo List <input type="checkbox" id="switch" /><label class="switch-label" for="switch">Toggle</label>
+            </h2>
+            <div class="list">
+                <div class="list-item">
+                    <input placeholder="Add a task to the List..." type="text" />
+                    <i class="fas fa-plus"></i>
+                </div>
+                <ol class="todo-list">
+                    <div class="taskbar list-item">
+                        <div>1 Item</div>
+                        <div style="display: flex">
+                            <div class="active" id="all">All</div>
+                            <div id="pending">Pending</div>
+                            <div id="complete">Completed</div>
+                        </div>
+                        <div class="clear">Clear</div>
+                    </div>
+                    <div class="items list-items">
+                        <label class="container2">
+                            <input type="checkbox">
+                            <span class="checkmark2"></span>
+                        </label>
+                        <div id="tasks">
+                            <div id="des">
+                                Go to the gym and do                            </div>
+                            <div id="opt">
+                                <img style="width : 30px ; height: 30px" src="https://img.icons8.com/material-outlined/24/000000/trash--v1.png"/>
+                                <img style="width : 30px ; height: 30px" src="https://img.icons8.com/emoji/48/000000/check-mark-button-emoji.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items list-items">
+                        <label class="container2">
+                            <input type="checkbox">
+                            <span class="checkmark2"></span>
+                        </label>
+                        <div id="tasks">
+                            <div id="des">
+                                Go to the gym and do                            </div>
+                            <div id="opt">
+                                <img style="width : 30px ; height: 30px" src="https://img.icons8.com/material-outlined/24/000000/trash--v1.png"/>
+                                <img style="width : 30px ; height: 30px" src="https://img.icons8.com/emoji/48/000000/check-mark-button-emoji.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </ol>
             </div>
-            <div class="items"></div>
-          </ol>
         </div>
-      </div>
     </section>
 
     <footer>

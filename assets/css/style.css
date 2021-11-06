@@ -118,6 +118,25 @@ div.list-item {
     opacity: 0.90;
 }
 
+.items{
+    display : flex;
+    justify-content : flex-start;
+    align-items : center;
+    padding : 5px;
+    background-color : #fff;
+    flex-basis : 90%;
+    min-height : 40px;
+}
+
+.des{
+    flex-basis: 80%;
+}
+
+#opt{
+    flex-basis: 20%;
+    opacity: 0;
+}
+
 body.dark div.list-item {
     background-color: #363636;
 }
@@ -243,6 +262,12 @@ body.dark ol.todo-list {
 
 ol .list-item {
     margin: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: 0.5s ease-out;
+}
+
+ol .list-items {
+    margin: 4px 2px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     transition: 0.5s ease-out;
 }
@@ -383,6 +408,28 @@ label.switch-label {
     position: relative;
 }
 
+label.check-list{
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border-radius: 10px;
+        position: relative;
+        background: transparent;
+        border-radius: 100px;
+}
+
+label.check-list:after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    z-index: -1;
+}
+
 label.switch-label:after {
     content: "";
     position: absolute;
@@ -394,6 +441,18 @@ label.switch-label:after {
     border-radius: 90px;
     transition: 0.3s;
 }
+
+.checkmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        background-color: #eee;
+        border-radius : 100px;
+}
+
+
 
 input#switch:checked+label.switch-label {
     background: #111;
@@ -412,3 +471,18 @@ label.switch-label:active:after {
     width: 80px;
 }
 /* /////////////////////////////////////////////////// */
+#tasks{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.575);
+    /* padding-left: 10px ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 90%;
+}
+
+
+
+#tasks:hover div#opt{
+    opacity: 1;
+}
