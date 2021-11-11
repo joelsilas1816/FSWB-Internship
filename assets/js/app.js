@@ -1,10 +1,12 @@
-var c = () =>{
-    console.log("arrow function")
-}
 
 var c = function() {
     console.log("expression")
 }
+
+var c = () =>{
+    console.log("arrow function")
+}
+
 
 function c(){
     console.log("keyword declaration");
