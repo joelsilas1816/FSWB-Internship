@@ -1,16 +1,11 @@
+// var afunc = x => x*x
 
-var c = function() {
-    console.log("expression")
+var afunc = (x,abc) => {
+console.log( x + abc) ;
 }
 
-var c = () =>{
-    console.log("arrow function")
-}
+arr = [1,2,3]
 
-
-function c(){
-    console.log("keyword declaration");
-}
-
-console.log("Program")
-c();
+arr.forEach((x,abc) => {
+    return ( x + abc) ;
+    })
