@@ -8,19 +8,21 @@
 
 var arr=["one","two","three"]
 
-var list = document.querySelector("#uni")
+var list = document.getElementById("uni")
 
 for (var i = 0; i<arr.length ; i++){
     var listitem = document.createElement('li');
-    var txt = document.createElement(arr[i]);
+    var txt = document.createTextNode(arr[i]);
+    // console.log("Hello",arr[i])
     listitem.appendChild(txt);
-//     list.appendChild(listitem);
+    // console.log(listitem)
+    list.appendChild(listitem);
 }
 
-console.log(arr)
-console.log(list)
-console.log(listitem)
-console.log(txt)
+// console.log(arr)
+// console.log(list)
+// console.log(listitem)
+// console.log(txt)
 // console.log(typeof arr)
 // console.log(typeof list)
 // console.log(typeof listitem)
