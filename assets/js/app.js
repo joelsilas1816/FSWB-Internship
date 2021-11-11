@@ -1,11 +1,9 @@
-// var afunc = x => x*x
+var mybutton = document.getElementById("thi")
 
-var afunc = (x,abc) => {
-console.log( x + abc) ;
+var body = document.querySelector("body")
+
+function add(){ 
+        body.classList.toggle("dark")
 }
 
-arr = [1,2,3]
-
-arr.forEach((x,abc) => {
-    return ( x + abc) ;
-    })
+mybutton.onclick = add
