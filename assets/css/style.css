@@ -130,6 +130,7 @@ div.list-item {
 
 .des{
     flex-basis: 80%;
+    display: inline-block;
 }
 
 #opt{
