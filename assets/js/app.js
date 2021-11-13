@@ -14,7 +14,14 @@ const insertItems = () => {
         listItem.appendChild(textnode)
         list.appendChild(listItem)
         chores.push(input.value) 
+
+        listItem.addEventListener('click' , e =>{
+         chores.splice(chores.indexOf(e.target.innerHTML),1)
+         e.target.remove()
+
+        } )
     }
+    input.value = ""
 }
 
 button.addEventListener('click', insertItems)
