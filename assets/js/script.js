@@ -1,7 +1,9 @@
 if(12>10){
-    console.log(bob);
 
     if(133>18){
-        var bob = "hello";
+        const bob = "hello";
     }
+
+    console.log(bob);
+
 }
