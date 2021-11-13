@@ -1,7 +1,10 @@
 // const listItem = document.querySelector("li")
 const list = document.querySelector("ul")
 const input = document.querySelector("input")
-const button = document.querySelector("button")
+const add = document.querySelectorAll("button")[0]
+const changeBackground = document.querySelectorAll("button")[1]
+const layout = document.querySelector('body')
+
 // const ol = document.querySelector("ol")
 
 var chores = []
@@ -24,4 +27,7 @@ const insertItems = () => {
     input.value = ""
 }
 
-button.addEventListener('click', insertItems)
+add.addEventListener('click', insertItems)
+changeBackground.addEventListener('click',() => {
+        layout.classList.toggle('dark')
+})
