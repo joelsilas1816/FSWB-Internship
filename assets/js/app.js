@@ -1,9 +1,20 @@
-var mybutton = document.getElementById("thi")
+// const listItem = document.querySelector("li")
+const list = document.querySelector("ul")
+const input = document.querySelector("input")
+const button = document.querySelector("button")
+// const ol = document.querySelector("ol")
 
-var body = document.querySelector("body")
+var chores = []
 
-function add(){ 
-        body.classList.toggle("dark")
+const insertItems = () => {
+    if(chores.includes(input.value)) console.log("Chore already exists")
+    else{
+        const listItem = document.createElement('li')
+        const textnode = document.createTextNode(input.value)
+        listItem.appendChild(textnode)
+        list.appendChild(listItem)
+        chores.push(input.value) 
+    }
 }
 
-mybutton.onclick = add
+button.addEventListener('click', insertItems)
